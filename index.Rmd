@@ -213,7 +213,6 @@ knitr::include_graphics("img/syllabus.png")
 - What is a model?
 - Why do we model transportation phenomena?
 - Is it easy to model transportation?
-- What is a good model?
 - Where is transportation modelling heading?
 - And this course?
 ]
@@ -263,36 +262,34 @@ Source: https://www.merriam-webster.com/dictionary/model
 
 ## Why do we model transportation phenomena?
 
-Modelling is an important part of most decision-making processes.
-No real-world interference
+.midi[
+.question[
+Modelling is an important part of most decision-making processes with no real-world interference.
+]
 
 .question[
-Representation and analysis of the interactions among **supply**, **demand** and **activity systems**
+Get the best understanding that we can of the current situation and how this may, with or without our interference, evolve in the future. 
+]
+
+.question[
+Representation and analysis of the interactions among **supply**, **demand** and **activity systems**. Can be descriptive, but more often there is the explicit aim of seeking the key links between causes and effects in transport decision-making either by the providers of transport services or by the users.
 ]
 
 .question[
 **Design** and **ex-ante evaluation** of transport systems cannot be measured
 ]
+]
 
-In order to model interactions within households such as the sharing and trading of activities, it require data for the entire family and 
-how these interact in their daily transport.
+---
 
-Get the best understanding that we can of the current situation and how this may, with or without our interference, evolve in the future. 
+## Why do we model transportation phenomena?
 
-the methods, be they quantitative or qualitative, which allow us to study the relationships that underlie transportation decision-making
-
-descriptive, but more often there is the explicit aim of seeking the key links between causes and effects in transport decision-making either by the providers of transport services or by the users.
 
 <hr></hr>
 
 ```{r echo=FALSE, fig.cap="Cascetta, 2009", message=FALSE, warning=FALSE, out.width="75%"}
 knitr::include_graphics("img/model.png")
 ```
-
-
-
-
-
 
 ---
 
@@ -307,10 +304,12 @@ knitr::include_graphics("img/model.png")
 - capacity constraints
 - variation across the time dimension
 - dynamic and pseudo-dynamic assignment - queing
+
 ]
 
 
 .pull-right[
+- availability of data
 - complexity
 - behavioural - derived demand
 - trip chaining
@@ -320,69 +319,39 @@ knitr::include_graphics("img/model.png")
 
 ---
 
-## What is a good model?
+## Where is transportation modelling heading?
 <hr></hr>
 
-Models are often complex and highly elaborate, but interestingly history suggests that those models that have exerted the greatest influence have been elegant and simple.
-
-The key point is that models seek to isolate key relationships, not to replicate the entire structure.
-
-Focus on the key relationships and the data
-
-
-Complexity x isolate the key factors that influence the outcome of any action. 
-
-It has many of the key features of the complete structure, but is simplified to aid analysis.
-
-academics focus on developing transport models that offer a reasonable method of exploring the technical efficiency of a transport system (e.g., in terms of traffic flows).
-policy-makers are much more interested in the impacts of various transport actions on different societal groups and that this distributional consideration far outweighs matters of technical efficiency.
-“political modelling" - decisionmakers often adopt models not for their technical merit but rather because they offer a framework akin to their political ideology
-
-Remaining with the issue of forecasting, the use to which the vast majority of models are in practice put, one of the problems in model assessment is that very little ex post analysis has been done on the accuracy of forecasts.
-
-Forecasting assessment of models is that it is often more difficult to predict the future values of the explanatory variables than it is to predict the transport effects that are of interest.
-
-**Causality** was seen as less relevant than forecasting performance. Indeed such aggregate correlations are often inaccurate and result is what is known as the fallacy of ecological correlation (or reversal of signs).
-
-understanding the **relationships** that influence travel behaviour have moved to the forefront of much of the modelling effort.
-This is largely because the issues confronting policymakers have changed. There is now more concern with managing transport than with accommodating transport. This poses a whole new series of questions that require proactive policy measures rather than a simple provision of roads, berths, runways and other infrastructure.
-
-why goods are being shipped, why people choose to travel at a specified time, why employers move to given area and why they use a specific freight transport mode is one side of an argument to move to a greater use of behaviourally rich models.
-Linked to this was the needed to develop models that would forecast the impacts of new provision on transport use, so that effective assessments could be made, usually within a broad cost–benefit framework.
-
-Social, environmental and economic pressures make it difficult to significantly expand the provision of transport infrastructure in many countries. In addition, new life-styles, advanced production management techniques, the much greater importance of the service economy and new working practices remove many of the constraints that formerly led to peaking.
-The consequent move to policy measures designed to make the best use of existing capacity, including its physical maintenance, requires models that will allow for people being able to change the times at which they travel and for the new logistics on the freight side. The growth in non-work travel, flexitime and longer shopping and personal business hours has also shifted the spotlight away from the need for fixed peak hour models.
-intelligent transport system (ITS)
-Reproudicibility
-Communication
+.large[
+- Balances complexity and decision support/communication ability.  
+- Is as disaggregated as possible, limited to data and communicability.   
+- Isolates key relationships, not to replicate the entire structure.   
+- Contains many of the key features of the complete structure, but is simplified to aid analysis.   
+- Focus on the key relationships and explores the available data   
+- Is concerned with causal effects.   
+- Focus on policy-making for different societal groups   
+]
 
 ---
 
 ## Where is transportation modelling heading?
+<hr></hr>
 
-
-All these systems are designed to get more capacity or better performance out of the transport system, and place fresh demands on modelling the response of providers and users of transport to this new information. A
-ML
-What kinds of data are needed to respond to these emerging issues of transport management, mobility and provision? As the issues have broadened, and thrown more weight onto individuals, companies and their choice, it has become clearer that these agents do not necessarily make the same choices year after year
-
-The long-standing assumption that model parameters are largely invariant with time, or at least change slowly, is much less easy to defend. We have already seen some efforts made at addressing this issue by means of the temporal study of panels of people. In terms of passenger transport, these panels have been set up to trace out such things as how and when vehicles are acquired or disposed of, what effects the family life cycle has on travel and activity behaviour and how stable travel and location choices remain over time. Consequently, panel survey methods are now being used, and the necessary analysis approaches and models are being developed. This greater appreciation of change has also led to support for collecting travel survey data on a continuous basis, rather than once every ten years.
-
-In addition to the focus on individuals, it is increasingly being recognized that institutions and their decisions need to be modelled more fully. Disagregatted
-
-, as mentioned earlier, many transport networks used to have their capacities defined by peak-volume commuter traffic, this is no longer the case. Freight transport, for instance, often poses congestion problems on the roads and leisure traffic imposes pressure on airport capacity
-
-e trade-off between modelling relevance and modelling complexity. I
-
- How many population strata or types of people do we need to achieve a good representation and understanding of a problem?  In how much detail do we need to measure certain variables to replicate a given phenomenon?  Space is crucial in transport; at what level of detail do we need to code the origin and destination of travellers to model their trip making behaviour?
-
-
-in very many cases the nature of the data restricts the choice of model to a single option.
-
-
+.large[
+- Is not based on “political modelling", but takes into account diversity    
+- Is flexible between forecasting and backcasting approaches.   
+- Its framework concerns "transport is a derived demand".    
+- Aims at managing the city and not only accommodating demand. Make the best use of existing capacity.   
+- Takes into account social, environmental and economic pressures and changes in space and time.   
+- Concerns effective assessments, usually within a broad cost–benefit framework   
+- Is reproducible, crowdsourced and understandable by different actors.
+]
 ---
 
 ## And this course?
+<hr></hr>
 
+.large[
 **Course outline**
 
 - Fundamental concepts and principles of **discrete choice modelling**   
@@ -391,11 +360,13 @@ in very many cases the nature of the data restricts the choice of model to a sin
 - Forecasting and **backcasting** planning approaches   
 - Modelling **networks as complex systems**   
 - Methods for **Evaluation** and **Comparison** of Transportation System Projects   
+]
 
 ---
 
 ## Homework for next week
 
+.large[
 **Reading**   
 Cascetta (2009) - Chapter 1: Modeling Transportation Systems: Preliminary Concepts and Application Areas   
 Hensher (2010) - Chapter 2: History of Demand Modelling
@@ -405,5 +376,19 @@ Computer lab 1: review of the four-stage model
 
 **In retrospect... or learning backlog**   
 Introduction to R and basic statistics
+]
+
+---
+
+.pull-left-narrow[
+![help+eachother](https://media0.giphy.com/media/fdLR6LGwAiVNhGQNvf/giphy.gif)  
+]
+
+.pull-right-wide[
+renataoliveira@gmail.com
+https://retaoliveira.github.io/places
+@retaoliveira
+]
+
 
 

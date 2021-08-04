@@ -284,6 +284,16 @@ into the effects of various developments (like policy developments) on transport
 
 
 
+All these systems are designed to get more capacity or better performance out of the transport system, and place fresh demands on modelling the response of providers and users of transport to this new information. A
+ML
+What kinds of data are needed to respond to these emerging issues of transport management, mobility and provision? As the issues have broadened, and thrown more weight onto individuals, companies and their choice, 
+
+
+
+
+ How many population strata or types of people do we need to achieve a good representation and understanding of a problem?  In how much detail do we need to measure certain variables to replicate a given phenomenon?  Space is crucial in transport; at what level of detail do we need to code the origin and destination of travellers to model their trip making behaviour?
+
+
 
 
 
