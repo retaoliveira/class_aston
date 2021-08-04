@@ -1,0 +1,85 @@
+---
+title: "Gráficos com ggplot2"
+output: hrbrthemes::ipsum_pdf
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,  dev = "cairo_pdf")
+```
+
+```{r message = FALSE}
+library(hrbrthemes)
+library(ggplot2)
+library(palmerpenguins)
+library(tidyverse)
+```
+
+## Primeira atividade do dia!
+
+1. Dê uma olhada no arquivo `penguins` utilizando a função `glimpse`
+
+
+```{r}
+glimpse(penguins)
+```
+
+
+2. Gere um gráfico de dispersão entre as variáveis `bill_depth_mm` e `bill_length_mm` diferenciando em cores a ilha (`island`) onde são encontrados os pinguins. 
+- Troque a paleta de cores por um conjunto que seja adequado ao público em geral, incluindo pessoas com algum grau de daltonismo.
+- Inclua elementos que ajudem a leitura do gráfico
+
+```{r}
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, y = bill_length_mm,
+                     colour = island)) +
+  geom_point() +
+  labs(title = "Largura e comprimento do bico",
+       subtitle = "Dimensões de Adelie, Chinstrap, e Gentoo Penguins",
+       x = "Largura do bico (mm)", y = "Comprimento do bico (mm)",
+       colour = "Ilhas")
+```
+```{r}
+ggplot(penguins, aes(x = bill_length_mm)) +
+  geom_boxplot()
+```
+
+```{r}
+summary(penguins$bill_length_mm)
+```
+```{r}
+ggplot(penguins, aes(x = bill_length_mm)) +
+  geom_histogram(binwidth = 2)
+```
+
+```{r}
+ggplot(penguins, aes(x = bill_length_mm)) +
+  geom_density(bandwidth = 0.5)
+```
+
+```{r}
+ggplot(penguins, aes(x = species, fill=island)) +
+  geom_bar(position = "fill")
+
+glimpse(penguins)
+```
+
+
+## Última atividade do dia!
+
+3. Gere um gráfico contendo histogramas do comprimento da nadadeira (`flipper_length_mm`) em relação à espécie (`species`). 
+
+4. Gere um gráfico que permita relacionar as ilhas (`island`) e as espécies (`species`). Inclua elementos gráficos que sejam interessantes para melhorar a leitura e interpretação dos gráficos. 
+
+
+
+```{r}
+library(openintro)
+glimpse(loans_full_schema)
+loans <- loans_full_schema %>%
+  select(loan_amount, interest_rate, term, grade, 
+         state, annual_income, homeownership, debt_to_income)
+glimpse(loans$loan_amount)
+summary(loans$loan_amount)
+summary(penguins$bill_length_mm)
+```
+

@@ -1,0 +1,227 @@
+---
+title: "Advanced Transportation Modelling"
+subtitle: "Hello World"
+author: 
+  - <br></br>Renata Oliveira
+date: '06/08/2021'
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.html
+    lib_dir: libs
+    css: ["xaringan-themer.css", "slides.css"]
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+      slideNumberFormat: |
+         <div class="progress-bar-container">
+           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+           </div>
+         </div>
+    seal: false
+
+---
+
+```{r child = "setup.Rmd"}
+```
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(openintro)
+loans_full_schema <- loans_full_schema %>%
+  mutate(grade = factor(grade, ordered = TRUE))
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+```{r xaringan-panelset, echo=FALSE, message=FALSE, warning=FALSE}
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(panel_tab_font_family = "sans-serif")
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+```
+
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+
+```{css include=FALSE}
+.panelset {
+   --panel-tab-foreground: currentColor;
+   --panel-tab-background: unset;
+   --panel-tab-active-foreground: currentColor;
+   --panel-tab-active-background: unset;
+   --panel-tab-active-border-color: currentColor;
+   --panel-tab-hover-foreground: currentColor;
+   --panel-tab-hover-background: unset;
+   --panel-tab-hover-border-color: currentColor;
+   --panel-tab-inactive-opacity: 0.5;
+   --panel-tabs-border-bottom: #ddd;
+   --panel-tab-font-family: Sen;
+   --panel-tab-background-color-active: #fffbe0;
+   --panel-tab-border-color-active: #023d4d;
+}
+
+.panelset .panel-tabs .panel-tab > a {
+	color: #023d4d;
+}
+
+.panelset .panel-tabs {
+  font-size: 0.5rem;
+}
+```
+
+class: center, middle
+background-image: url("img/logo.png")
+background-position: 90% 10%
+background-size: 30%
+
+
+## WELCOME TO THE COURSE
+
+.larger[
+.center[
+**Advanced Transport Modelling** 
+]]
+
+Fridays - 17:00   
+Spring 2022   
+Discussion channels: [Discord]( https://discord.gg/csPCPXdJ)   
+Assincronous content: [https://retaoliveira.github.io/places/courses/atm/](https://retaoliveira.github.io/places/courses/atm/)
+
+**Prof. Renata Oliveira**
+
+---
+
+## If you are here, I expect you to know a little bit of.... 
+
+.pull-left[
+**Algebra**   
+- basic operations of Matrix Algebra
+
+**Statistical modelling**    
+- probabilities   
+- estimation methods and hypotheses testing   
+
+**Operations Research**
+- graphs and network representation
+- stochastic modelling and simulation
+]
+
+.pull-right[
+**Data and Space**   
+- sampling theory   
+- basic data-collection methods
+- imputation methods
+- GIS and GIS-T
+
+**Four-stage model**
+- generation
+- distribution
+- mode choice
+- assignment
+]
+
+---
+
+## I hope you will have FUN! We are going to...
+
+- develop applied projects (project-based learning)   
+- acquire computing skills in transport modelling (hands-on learning)   
+- collaborate with your mate (peer-education and think-pair-share)
+- engage in self-learning (flipped classroom)
+
+.center[
+![fun](https://media3.giphy.com/media/lmv5aDvwOgTmby3a13/giphy.gif)  
+]
+
+---
+
+## You'll be able to.... 
+
+-	**Explain** the complexity of modelling heavily utilised transport systems and networks, both verbally and in writing.
+
+- **Select**, **specify**, and **use** the appropriate model and forecasting techniques for different scenarios to support the interpretation of proposed transport solutions at local and strategic level, and for different modes.
+
+- **Interpret** model outputs to make practical recommendations.
+
+-	**Use** advanced techniques for the analysis of traffic and travel generation, to enable the evaluation of and monitoring of transport solutions.
+
+---
+
+## Grading Policy
+
+- **15%** of your grade will be determined by your **attendance** and **participation** in the **intermediate seminars**.
+
+- **35%** of your grade will be determined by your deliveries concerning **computer lab activities**.
+
+- **10%** of your grade will be determined by your **attendance** and **participation** in the **final seminar**.
+
+- **30%** of your grade will be determined by the **integration project report**.
+
+- **10%** of your grade will be determined by **self and peer-assessment**.
+
+---
+
+## Everything is in the Syllabus
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("img/syllabus.png")
+```
+
+---
+
+## Let's get serious about modelling!
+
+.pull-left[
+![modelling](https://media4.giphy.com/media/aszcnFCc5z1WU/giphy.gif)  
+
+![math](https://media0.giphy.com/media/APqEbxBsVlkWSuFpth/giphy-downsized.gif)  
+]
+
+.pull-right[
+.large[
+- What is a model?
+- How does it help?
+- Model transport systems?
+]
+]
+
+![help](https://media1.giphy.com/media/4SXW1rU9loG1HIXXg2/giphy-downsized.gif)  
+
+
+
+
+---
+
+## Transportation System Model
+
+<hr></hr>
+
+```{r echo=FALSE, fig.cap="Cascetta, 2009", message=FALSE, warning=FALSE, out.width="75%"}
+knitr::include_graphics("img/model.png")
+```

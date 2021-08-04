@@ -1,0 +1,299 @@
+Models of trip production
+Models of distribution or destination choice
+Models of mode choice
+
+
+
+Four-stage models
+Activity-based models
+Stated preference Experimental Design Strategies
+Towards a Land-Use and Transport Interaction Framework
+Travel Networks
+Transport Demand Elasticities
+
+Definition of Movement and Activity for Transport Modelling
+
+
+---
+
+## Modelling
+
+<hr></hr>
+
+
+What is a model?
+
+Why do we model transportation phenomena?
+Modelling is an important part of most decision-making processes.
+
+
+Context
+
+focus on the key relationships and the data that are available to get the best understanding that we can of the current situation and how this may, with or without our interference, evolve in the future. T
+
+isolate the key factors that influence the outcome of any action
+
+It has many of the key features of the complete structure, but is simplified to aid analysis.
+
+the methods, be they quantitative or qualitative, which allow us to study the relationships that underlie transportation decision-making
+
+descriptive, but more often there is the explicit aim of seeking the key links between causes and effects in transport decision-making either by the providers of transport services or by the users.
+
+Reproudicibility
+Communication
+
+
+---
+
+## A good model
+
+This course concerns transport modelling as the study of the behaviour of individuals, associated with the movement of themselves (passenger transport), of commodities (freight transport) or of information via telecommunications.
+
+---
+
+nature of models, their use and their output
+
+academics focus on developing transport models that offer a reasonable method of exploring the technical efficiency of a transport system (e.g., in terms of traffic flows).
+policy-makers are much more interested in the impacts of various transport actions on different societal groups and that this distributional consideration far outweighs matters of technical efficiency.
+“political modelling" - decisionmakers often adopt models not for their technical merit but rather because they offer a framework akin to their political ideology
+
+
+meets the ideological bent of the ultimate user. It should be said that this
+Models are often complex and highly elaborate, but interestingly history suggests that those models that have exerted the greatest influence have been elegant and simple.
+
+In transport we also find very simple models that have immense use or provide a basis for reflection and thought. There is, for example, Wardrop’s first principle in terms of traffic congestion and Zahavi’s constant time model. The key point is that models seek to isolate key relationships, not to replicate the entire structure.
+
+
+Good predictions do usually require good models, but in some cases pure chance can lead to fairly accurate predictions.
+
+. There is always the pressure to obtain “good fits” and the accompanying pressure for ex post rationalization.
+Remaining with the issue of forecasting, the use to which the vast majority of models are in practice put, one of the problems in model assessment is that very little ex post analysis has been done on the accuracy of forecasts.
+
+forecasting assessment of models is that it is often more difficult to predict the future values of the explanatory variables than it is to predict the transport effects that are of interest.
+
+Causality was seen as less relevant than forecasting performance. Indeed such aggregate correlations are often inaccurate and result is what is known as the fallacy of ecological correlation (or reversal of signs).
+
+
+understanding the relationships that influence travel behaviour have moved to the forefront of much of the modelling effort.
+This is largely because the issues confronting policymakers have changed. There is now more concern with managing transport than with accommodating transport. This poses a whole new series of questions that require proactive policy measures rather than a simple provision of roads, berths, runways and other infrastructure.
+
+why goods are being shipped, why people choose to travel at a specified time, why employers move to given area and why they use a specific freight transport mode is one side of an argument to move to a greater use of behaviourally rich models.
+Linked to this was the needed to develop models that would forecast the impacts of new provision on transport use, so that effective assessments could be made, usually within a broad cost–benefit framework.
+
+Social, environmental and economic pressures make it difficult to significantly expand the provision of transport infrastructure in many countries. In addition, new life-styles, advanced production management techniques, the much greater importance of the service economy and new working practices remove many of the constraints that formerly led to peaking.
+The consequent move to policy measures designed to make the best use of existing capacity, including its physical maintenance, requires models that will allow for people being able to change the times at which they travel and for the new logistics on the freight side. The growth in non-work travel, flexitime and longer shopping and personal business hours has also shifted the spotlight away from the need for fixed peak hour models.
+intelligent transport system (ITS)
+
+All these systems are designed to get more capacity or better performance out of the transport system, and place fresh demands on modelling the response of providers and users of transport to this new information. A
+ML
+What kinds of data are needed to respond to these emerging issues of transport management, mobility and provision? As the issues have broadened, and thrown more weight onto individuals, companies and their choice, it has become clearer that these agents do not necessarily make the same choices year after year
+
+The long-standing assumption that model parameters are largely invariant with time, or at least change slowly, is much less easy to defend. We have already seen some efforts made at addressing this issue by means of the temporal study of panels of people. In terms of passenger transport, these panels have been set up to trace out such things as how and when vehicles are acquired or disposed of, what effects the family life cycle has on travel and activity behaviour and how stable travel and location choices remain over time. Consequently, panel survey methods are now being used, and the necessary analysis approaches and models are being developed. This greater appreciation of change has also led to support for collecting travel survey data on a continuous basis, rather than once every ten years.
+
+In addition to the focus on individuals, it is increasingly being recognized that institutions and their decisions need to be modelled more fully. Disagregatted
+
+, as mentioned earlier, many transport networks used to have their capacities defined by peak-volume commuter traffic, this is no longer the case. Freight transport, for instance, often poses congestion problems on the roads and leisure traffic imposes pressure on airport capacity
+
+e trade-off between modelling relevance and modelling complexity. I
+
+ How many population strata or types of people do we need to achieve a good representation and understanding of a problem?  In how much detail do we need to measure certain variables to replicate a given phenomenon?  Space is crucial in transport; at what level of detail do we need to code the origin and destination of travellers to model their trip making behaviour?
+
+
+in very many cases the nature of the data restricts the choice of model to a single option.
+
+
+
+---
+
+## Practical considerations
+- sparce matrices
+- treatment of external zones
+- intra-zonal trips
+- journey purposes
+- K factors
+- errors in modelling
+- stability of trip matrices in time and space
+
+
+
+
+
+
+
+
+
+
+
+---
+
+## Transportation System Model
+
+<hr></hr>
+
+```{r echo=FALSE, fig.cap="Cascetta, 2009", message=FALSE, warning=FALSE, out.width="75%"}
+knitr::include_graphics("img/model.png")
+```
+---
+
+## Why use models?
+
+<hr></hr>
+
+
+.question[
+Representation and analysis of the interactions among **supply**, **demand** and **activity systems**
+]
+
+.question[
+**Design** and **ex-ante evaluation** of transport systems cannot be measured
+]
+
+---
+
+## Supply models
+
+<hr></hr>
+
+
+.tip[
+Represent the **performance of transportation facilities and services** for managers and users
+]
+
+.tip[
+Determine the **external impacts** of transportation systems
+- pollution
+- energy consumption
+- accidents
+]
+
+.tip[
+Level of service attribute - **travel time** and **cost** are inputs for demand models 
+]
+
+
+---
+
+##  Demand models
+
+.your-turn[
+aefga
+]
+
+---
+
+## Modelling challenges
+
+<hr></hr>
+.large[
+.pull-left[
+.hand[**Supply**]
+- capacity constraints
+- variation across the time dimension
+- dynamic and pseudo-dynamic assignment - queing
+]
+
+
+.pull-right[
+.hand[
+**Demand**
+]
+- trip chaining
+- multiple consumer classes
+]
+]
+
+
+in 
+order to model interactions within households such as the sharing 
+and trading of activities, it require data for the entire family and 
+how these interact in their daily transport.
+
+
+---
+
+## Prerequisites
+
+- Operations Research (optimization, transport model, )
+- 4-stage models
+
+
+
+- Acvitity-based models
+Household constraints
+Time constraints
+inter-household contraints
+Affect transport behaviour
+
+smaller zones (parcels), 
+more socio-economic details,
+more choice and not least
+combined choice-set for the entire family
+
+
+
+people’s activities are the “driver” for transport, and by modelling activities rather than transport itself we often get a more robust model for transport behaviour
+Logsums
+
+Land-use modelling
+more general way of approaching travel demand modelling,
+utility 
+maximisation
+spatial focus in 
+gravity models are synthesized into a unified equilibrium frame
+
+residential 
+location, bid rent functions willingness to pay for residential location in the market
+ equilibrium prices in heterogeneous spatial housing markets
+URBANSIM
+
+Spatial computable equilibrium models (SCGE)
+a set of equations 
+which describe how prices, demand and supply are related.
+
+Simulation
+
+Assignment modelling
+- Population synthesis
+- Estimation of complicated choice models (mixed logit)
+- Test and validation of models and algorithms
+
+Gravity models
+Entropy maximization
+
+The importance of the interaction between transport and land use is twofold. First, if transport strategies significantly change accessibility this will change demand for land and generate new development in some areas; these will in turn affect the pattern of trips (trip matrices) and therefore have an impact on the performance of the transport system.
+
+
+, SD focuses on accessibility as a key driver of the attractiveness of a location to business and residents. A good location provides people access to the activities outside the home (including work) they wish to take part in; it provides businesses access to customers, a workforce and markets. A SD model of land use transport interactions will focus on a few features that make
+
+Descriptive versus exploratory models
+Descriptive models represent the correlations between variables without explicitly considering causality, whereas explanatory models will map out causes as well as consequences.
+
+Spatial versus non-spatial models
+
+Aggregated versus disaggregated models
+
+Static versus dynamic models
+In dynamic models, as opposed to static models, the time factor plays an explicit part. Changes in behaviour are assumed not to occur instantly, but over a certain time period.
+static models are usually estimated on the basis of what are called cross-section data. These data constitute a snapshot taken at one moment in time. Dynamic models require time-series data.
+
+Models based on revealed preference or based on stated preference
+When collecting data on individual choice behaviour, two options are open: that of revealed preference (RP) and that of stated preference (SP). In the case of RP, the actual choices made by the individual are observed in a real situation. In the case of SP, the researcher confronts the individual with hypothetical selection situations.
+
+Models for travel versus models for activities
+Traditional models consider travel behaviour in isolation. Activity-based models (see also Chapter 3) link travel to the total activity pattern.
+The advantages of these ‘activity-based models’ are (1) that they provide a better description of behaviour and, in connection with this, (2) the fact that, from a conceptual point of view, they are more satisfactory
+
+Methods that do versus models that do not take into account the effects of transport on land use and on the economy
+Traditional models describe transportation as a derivative of spatial planning and economic development. In actual practice, however, a partial reverse effect may be possible: the presence or absence of transport infrastructure does affect the pattern of spatial and economic activities (see also Chapter 2, and Figure 2.1). There are two kinds of model that count, with interactions in two directions: the so-called land-use transportation interaction (LUTI) models and the models for determining the economic effects of transportation.
+
+Models for passenger transport versus freight transport
+
+
+The major conclusions to be drawn from the above are: 1. A model is a simplified representation of a part of reality. 2. Transportation models are first and foremost a means to gain insights
+into the effects of various developments (like policy developments) on transportation. 3. There are many kinds of models. They can be classified, among other things, for the transport mode they focus on (e.g. passenger cars, aeroplanes), or the period of time they focus on, or the technical characteristics (e.g. dynamic versus static models), or the question as to whether or not they contain spatially varying data. 4. Whether or not it is advisable to answer a certain research or policy question by using a model cannot easily be established. It requires adequately weighing the available alternatives as well as the pros and cons of model simulations and the relevant alternatives.
+
+
+
+
+
+
