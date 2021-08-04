@@ -14,17 +14,7 @@ Transport Demand Elasticities
 Definition of Movement and Activity for Transport Modelling
 
 
----
 
-## Modelling
-
-<hr></hr>
-
-
-What is a model?
-
-Why do we model transportation phenomena?
-Modelling is an important part of most decision-making processes.
 
 
 Context
