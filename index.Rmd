@@ -198,9 +198,7 @@ knitr::include_graphics("img/syllabus.png")
 ## Let's get serious about modelling!
 
 .pull-left[
-![modelling](https://media4.giphy.com/media/aszcnFCc5z1WU/giphy.gif)  
-
-![math](https://media0.giphy.com/media/APqEbxBsVlkWSuFpth/giphy-downsized.gif)  
+ 
 ]
 
 .pull-right[
@@ -210,10 +208,6 @@ knitr::include_graphics("img/syllabus.png")
 - Model transport systems?
 ]
 ]
-
-![help](https://media1.giphy.com/media/4SXW1rU9loG1HIXXg2/giphy-downsized.gif)  
-
-
 
 
 ---
