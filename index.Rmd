@@ -385,8 +385,11 @@ Introduction to R and basic statistics
 ]
 
 .pull-right-wide[
+
 renataoliveira@gmail.com
+
 https://retaoliveira.github.io/places
+
 @retaoliveira
 ]
 
