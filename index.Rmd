@@ -11,6 +11,7 @@ output:
     lib_dir: libs
     css: ["xaringan-themer.css", "slides.css"]
     nature:
+      includePresenterNotes: true
       ratio: "16:9"
       highlightLines: true
       highlightStyle: solarized-light
@@ -115,12 +116,37 @@ Assincronous content: [https://retaoliveira.github.io/places/courses/atm/](https
 
 **Prof. Renata Oliveira**
 
+???
+
+The site will be developed throughout the course and some parts of it are still in portuguese!
+
+In Discord we have a text channel for exchanges and voice channels for remote meetings. We'll have specific channels for the whole class and for groups. 
+
 ---
 
 ## If you are here, I expect you to know a little bit of.... 
 <hr></hr>
 
+.large[
 .pull-left[
+**Algebra**   
+
+**Statistics**    
+ 
+**Operations Research**
+]
+
+.pull-right[
+**Data and Space**   
+
+**Four-stage model**
+
+]
+]
+
+???
+
+
 **Algebra**   
 - basic operations of Matrix Algebra
 
@@ -145,8 +171,8 @@ Assincronous content: [https://retaoliveira.github.io/places/courses/atm/](https
 - distribution
 - mode choice
 - assignment
-]
 
+I CAN HELP YOU CATCH UP WITH ANY NECESSARY KNOWLEDGE!
 ---
 
 ## I hope you will have FUN! We are going to...
@@ -161,6 +187,7 @@ Assincronous content: [https://retaoliveira.github.io/places/courses/atm/](https
 ![fun](https://media3.giphy.com/media/lmv5aDvwOgTmby3a13/giphy.gif)  
 ]
 
+
 ---
 
 ## You'll be able to.... 
@@ -173,6 +200,17 @@ Assincronous content: [https://retaoliveira.github.io/places/courses/atm/](https
 - **Interpret** model outputs to make practical recommendations.
 
 -	**Use** advanced techniques for the analysis of traffic and travel generation, to enable the evaluation of and monitoring of transport solutions.
+
+???
+
+- What is the tradicional modelling framework and where we are heading in transportation
+
+- Explore different transportation modes in modelling and consider the best trade-off while choosing methods, data and techniques for representing transport in the computer environement to understand and assess transport interventions in the urban and regional contexts.
+
+- Make great use of modelling outputs for better places
+
+- Use advanced techniques, through Free and Opensource software, for transportation planning
+
 
 ---
 
@@ -189,6 +227,11 @@ Assincronous content: [https://retaoliveira.github.io/places/courses/atm/](https
 
 - **10%** of your grade will be determined by **self and peer-assessment**.
 
+
+???
+
+I want you to learn! If you engage, you will learn!
+
 ---
 
 ## Everything is in the Syllabus
@@ -197,6 +240,10 @@ Assincronous content: [https://retaoliveira.github.io/places/courses/atm/](https
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 knitr::include_graphics("img/syllabus.png")
 ```
+
+???
+
+There are lots of additional information on the Syllabus delivered through the website of the discipline, but feel free to ask! 
 
 ---
 
@@ -236,7 +283,9 @@ a person or thing that serves as a pattern for an artist
 Source: https://www.merriam-webster.com/dictionary/model
 ]
 
+???
 
+There are many definitions of models! What is ours?
 
 ---
 
@@ -256,7 +305,9 @@ Source: https://www.merriam-webster.com/dictionary/model
 Source: https://www.merriam-webster.com/dictionary/model
 ]
 
+???
 
+The definition is simple and we need to explore the specificities of transport modelling! We have great challenges ahead!
 
 ---
 
@@ -267,18 +318,36 @@ Source: https://www.merriam-webster.com/dictionary/model
 Modelling is an important part of most decision-making processes with no real-world interference.
 ]
 
+
+
 .question[
 Get the best understanding that we can of the current situation and how this may, with or without our interference, evolve in the future. 
 ]
 
+
+
 .question[
-Representation and analysis of the interactions among **supply**, **demand** and **activity systems**. Can be descriptive, but more often there is the explicit aim of seeking the key links between causes and effects in transport decision-making either by the providers of transport services or by the users.
+Representation and analysis of the interactions among **supply**, **demand** and **activity systems**. 
 ]
+
+
 
 .question[
 **Design** and **ex-ante evaluation** of transport systems cannot be measured
 ]
 ]
+
+???
+
+Modelling is an important part of most decision-making processes with no real-world interference.
+
+Get the best understanding that we can of the current situation and how this may, with or without our interference, evolve in the future. 
+
+
+Models can be descriptive, but more often there is the explicit aim of seeking the key links between causes and effects in transport decision-making either by the providers of transport services or by the users.
+
+**Design** and **ex-ante evaluation** of transport systems cannot be measured
+
 
 ---
 
@@ -290,6 +359,18 @@ Representation and analysis of the interactions among **supply**, **demand** and
 ```{r echo=FALSE, fig.cap="Cascetta, 2009", message=FALSE, warning=FALSE, out.width="75%"}
 knitr::include_graphics("img/model.png")
 ```
+
+???
+
+Transportation is and essential element of cities and need be part of urban planning. We need to model the supply (infrastructure and service) and understand the external impacts of the supply. 
+
+As a result of transportation supply, we have the Level-of-service, which concerns time and costs, among other attributes that impact the demand. 
+
+Demand models concern passengers and freight and depend on the location and intensity of activities. 
+
+The activities system is impacted by the level of service attributes and the patterns of spatial and social interactions will impact the decisions regarding the supply of transport. 
+
+Therefore, we model transport to understand the attributes that generate and materialize the human interactions. **Transport is a derived demand**. 
 
 ---
 
@@ -317,19 +398,30 @@ knitr::include_graphics("img/model.png")
 ]
 ]
 
+???
+
+Transport modelling has been evolving and different challenges emerge:
+- we need to include capacity constraints and variation across the time dimension into models to represent the actual system with focus on the integration on the urban system. 
+
+- More sofisticated approaches are being explored considering space-time changes, such as dynamic and pseudo-dynamic assignment - queing
+
+- Transportation modelling depends on data and there should be a concern on the trade-off between complexity and representation/communication ability.
+
+- Behavioural challenges that concern peoples' choices have araisen. 
+
 ---
 
 ## Where is transportation modelling heading?
 <hr></hr>
 
 .large[
-- Balances complexity and decision support/communication ability.  
-- Is as disaggregated as possible, limited to data and communicability.   
-- Isolates key relationships, not to replicate the entire structure.   
-- Contains many of the key features of the complete structure, but is simplified to aid analysis.   
-- Focus on the key relationships and explores the available data   
-- Is concerned with causal effects.   
-- Focus on policy-making for different societal groups   
+- **Balances complexity** and **decision support/communication ability**.  
+- Is as **disaggregated** as possible, limited to data and communicability.   
+- **Isolates key relationships**, not to replicate the entire structure.   
+- Contains many of the key features of the complete structure, but is **simplified** to aid analysis.   
+- Focus on the **key relationships** and explores the available data   
+- Is concerned with **causal effects**.   
+- Focus on **policy-making** for **different societal groups**   
 ]
 
 ---
@@ -338,13 +430,13 @@ knitr::include_graphics("img/model.png")
 <hr></hr>
 
 .large[
-- Is not based on “political modelling", but takes into account diversity    
-- Is flexible between forecasting and backcasting approaches.   
-- Its framework concerns "transport is a derived demand".    
-- Aims at managing the city and not only accommodating demand. Make the best use of existing capacity.   
-- Takes into account social, environmental and economic pressures and changes in space and time.   
-- Concerns effective assessments, usually within a broad cost–benefit framework   
-- Is reproducible, crowdsourced and understandable by different actors.
+- Is **not** based on **“political modelling"**, but takes into account diversity    
+- Is **flexible** between **forecasting** and **backcasting** approaches.   
+- Its framework concerns **transport as derived demand**.    
+- Aims at **managing the city** and **not** only **accommodating demand**. Make the **best use of existing capacity**.   
+- Takes into account **social, environmental and economic pressures** and **changes** in **space** and **time**.   
+- Concerns **effective assessments**, usually within a broad cost–benefit framework   
+- Is **reproducible**, **crowdsourced** and **understandable** by different actors.
 ]
 ---
 
@@ -366,16 +458,31 @@ knitr::include_graphics("img/model.png")
 
 ## Homework for next week
 
-.large[
-**Reading**   
-Cascetta (2009) - Chapter 1: Modeling Transportation Systems: Preliminary Concepts and Application Areas   
-Hensher (2010) - Chapter 2: History of Demand Modelling
+.pull-left[
+**Preliminary activity for next class**
+
+1. Reading   
+Cascetta (2009) - Chapter 3: Random Utility Theory
+
+2. Videos
+[Video 1](https://www.youtube.com/watch?v=IFjD3NMv6Kw)
+[Video 2](https://www.youtube.com/watch?v=Cgw9oHDfJ4k&t=116s)
+[Video 3](https://www.youtube.com/watch?v=8Hm2GCKdd5g)
+
+3. Podcast
+[Talking Transport Transformation - S01-E01 | Sustainable Mobility at the Heart of a Green Recovery with Dr. Jörn Richert](https://podcasts.google.com/feed/aHR0cHM6Ly90YWxraW5ndHJhbnNwb3J0dHJhbnNmb3JtYXRpb24ucG9kaWdlZS5pby9mZWVkL2FhYw/episode/NzdiOTI0OGE4YTkwYTdjZjY1YTcxZDZmYjhiNTkwYzg?sa=X&ved=0CAUQkfYCahcKEwi47vSGtpzyAhUAAAAAHQAAAAAQEA)
+]
+
+.pull-right[
 
 **Lab**   
 Computer lab 1: review of the four-stage model
 
+
 **In retrospect... or learning backlog**   
-Introduction to R and basic statistics
+Cascetta (2009) - Chapter 1: Modeling Transportation Systems: Preliminary Concepts and Application Areas   
+Hensher (2010) - Chapter 2: History of Demand Modelling
+Introduction to R and basic statistics [Link](https://retaoliveira.github.io/places/conteudo/intro_r/)
 ]
 
 ---
@@ -390,7 +497,10 @@ renataoliveira@gmail.com
 
 https://retaoliveira.github.io/places
 
-@retaoliveira
+<i class="fa fa-twitter" aria-hidden="true"></i> [@retaoliveira](https://twitter.com/retaoliveira)
+
+<i class="fa fa-github" aria-hidden="true"></i> [@retaoliveira](https://github.com/retaoliveira)
+
 ]
 
 
