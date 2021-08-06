@@ -112,7 +112,7 @@ background-size: 30%
 Fridays - 17:00   
 Spring 2022   
 Discussion channels: [Discord]( https://discord.gg/csPCPXdJ)   
-Assincronous content: [https://retaoliveira.github.io/places/courses/atm/](https://retaoliveira.github.io/places/courses/atm/)
+Asynchronous content: [https://retaoliveira.github.io/places/courses/atm/](https://retaoliveira.github.io/places/courses/atm/)
 
 **Prof. Renata Oliveira**
 
