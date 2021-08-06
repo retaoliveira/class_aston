@@ -457,38 +457,41 @@ Transport modelling has been evolving and different challenges emerge:
 ---
 
 ## Homework for next week
+<hr></hr>
 
 .pull-left[
 **Preliminary activity for next class**
 
-1. Reading   
+.midi[
 Cascetta (2009) - Chapter 3: Random Utility Theory
 
-2. Videos
-[Video 1](https://www.youtube.com/watch?v=IFjD3NMv6Kw)
-[Video 2](https://www.youtube.com/watch?v=Cgw9oHDfJ4k&t=116s)
+[Video 1](https://www.youtube.com/watch?v=IFjD3NMv6Kw)   
+[Video 2](https://www.youtube.com/watch?v=Cgw9oHDfJ4k&t=116s)   
 [Video 3](https://www.youtube.com/watch?v=8Hm2GCKdd5g)
 
-3. Podcast
 [Talking Transport Transformation - S01-E01 | Sustainable Mobility at the Heart of a Green Recovery with Dr. Jörn Richert](https://podcasts.google.com/feed/aHR0cHM6Ly90YWxraW5ndHJhbnNwb3J0dHJhbnNmb3JtYXRpb24ucG9kaWdlZS5pby9mZWVkL2FhYw/episode/NzdiOTI0OGE4YTkwYTdjZjY1YTcxZDZmYjhiNTkwYzg?sa=X&ved=0CAUQkfYCahcKEwi47vSGtpzyAhUAAAAAHQAAAAAQEA)
-]
+]]
 
 .pull-right[
-
+.midi[
 **Lab**   
 Computer lab 1: review of the four-stage model
-
 
 **In retrospect... or learning backlog**   
 Cascetta (2009) - Chapter 1: Modeling Transportation Systems: Preliminary Concepts and Application Areas   
 Hensher (2010) - Chapter 2: History of Demand Modelling
 Introduction to R and basic statistics [Link](https://retaoliveira.github.io/places/conteudo/intro_r/)
-]
+
+**Padlet**
+Fill in the Padlet for us to know each other (https://padlet.com/renataoliveira/hm3w1rqy2bh1tb1e)
+]]
 
 ---
 
+
+
 .pull-left-narrow[
-![help+eachother](https://media0.giphy.com/media/fdLR6LGwAiVNhGQNvf/giphy.gif)  
+![together](https://media1.giphy.com/media/JPUEkGu6Jxo4fboA9s/giphy.gif)  
 ]
 
 .pull-right-wide[
